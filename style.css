@@ -22,6 +22,7 @@ header .navbar {
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
+  
 }
 
 .navbar .logo {
@@ -48,7 +49,7 @@ header .navbar {
 }
 
 .navbar a:hover {
-  color: #C06B3E;
+  color: #f12020;
 }
 
 .hero-section {
@@ -83,7 +84,7 @@ header .navbar {
 }
 
 .hero-section .content button {
-  background:rgb(241, 53, 6);
+  background:#f12020;
   padding: 12px 30px;
   border: none;
   font-size: 1rem;
@@ -97,7 +98,7 @@ header .navbar {
 
 .hero-section .content button:hover {
   color: #fff;
-  background: rgb(160, 68, 45);
+  background: #ec5b5b;
 }
 
 #close-menu-btn {
@@ -111,6 +112,18 @@ header .navbar {
 #hamburger-btn {
   color: #fff;
   cursor: pointer;
+  display: none;
+}
+
+header.scrolled .navbar #hamburger-btn {
+  display: none;
+}
+
+header.scrolled .navbar .logo {
+  display: none;
+}
+
+header.scrolled .navbar .menu-links {
   display: none;
 }
 
@@ -198,13 +211,13 @@ header .navbar {
   text-align: center;
   margin: 10px;
   max-width: 500px;
-  min-height: 100px;
+  max-height: 380px;
 }
 
 .product-card img {
   width: 100%;
   max-height: 200px;
-  min-width: 400px;
+  min-width: 450px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -222,7 +235,7 @@ header .navbar {
 .product-card button {
   margin-top: 15px;
   padding: 8px 16px;
-  background-color:rgb(241, 53, 6);
+  background-color:#f12020;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -230,7 +243,7 @@ header .navbar {
 }
 
 .product-card button:hover {
-  background-color: rgb(240, 112, 80);;
+  background-color: #ec5b5b;;
 }
 
 
@@ -264,4 +277,487 @@ header .navbar {
   object-fit: cover;
   border-radius: 8px;
 }
+}
+
+
+/* CSS Code for pricing table */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+  max-width: 1090px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.wrapper .table{
+  background: #fff;
+  width: calc(33% - 20px);
+  padding: 30px 30px;
+  position: relative;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  border-radius: 8px ;
+
+}
+.table .price-section{
+  display: flex;
+  justify-content: center;
+}
+.table .price-area{
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  padding: 2px;
+}
+.price-area .inner-area{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  line-height: 117px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+.price-area .inner-area .text{
+  font-size: 25px;
+  font-weight: 400;
+  position: absolute;
+  top: 0px;
+  left: 17px;
+}
+.price-area .inner-area .price{
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 35px;
+  margin-right: 15px;
+}
+.table .package-name{
+  width: 100%;
+  height: 2px;
+  margin: 35px 0;
+  position: relative;
+}
+.table .package-name::before{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 25px;
+  font-weight: 500;
+  background: #fff;
+  padding: 0 15px;
+  transform: translate(-50%, -50%);
+}
+.table .features li{
+  margin-bottom: 15px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.features li .list-name{
+  font-size: 17px;
+  font-weight: 400;
+}
+.features li .icon{
+  font-size: 15px;
+}
+.features li .icon.check{
+  color: #2db94d;
+}
+.features li .icon.cross{
+  color: #cd3241;
+}
+.table .btn{
+  width: 100%;
+  display: flex;
+  margin-top: 35px;
+  justify-content: center;
+}
+.table .btn button{
+  width: 80%;
+  height: 50px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.table .btn button:hover{
+  border-radius: 5px;
+}
+.basic .features li::selection{
+  background: #ffd861;
+}
+.basic ::selection,
+.basic .price-area,
+.basic .inner-area{
+  background: #ffd861;
+}
+.basic .btn button{
+  border: 2px solid #ffd861;
+  background: #fff;
+  color: #ffd861;
+}
+.basic .btn button:hover{
+  background: #ffd861;
+  color: #fff;
+}
+.premium ::selection,
+.premium .price-area,
+.premium .inner-area,
+.premium .btn button{
+  background: #a26bfa;
+}
+.premium .btn button:hover{
+  background: #833af8;
+}
+.ultimate ::selection,
+.ultimate .price-area,
+.ultimate .inner-area{
+  background: #43ef8b;
+}
+.ultimate .btn button{
+  border: 2px solid #43ef8b;
+  color: #43ef8b;
+  background: #fff;
+}
+.ultimate .btn button:hover{
+  background: #43ef8b;
+  color: #fff;
+}
+.basic .package-name{
+  background: #ffecb3;
+}
+.premium .package-name{
+  background: #d0b3ff;
+}
+.ultimate .package-name{
+  background: #baf8d4;
+}
+.basic .package-name::before{
+  content: "Basic";
+}
+.premium .package-name::before{
+  content: "Premium";
+  font-size: 24px;
+}
+.ultimate .package-name::before{
+  content: "Ultimate";
+  font-size: 24px;
+}
+@media (max-width: 1020px) {
+  .wrapper .table{
+    width: calc(50% - 20px);
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 698px) {
+  .wrapper .table{
+    width: 100%;
+  }
+}
+::selection{
+  color: #fff;
+}
+.table .ribbon{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  overflow: hidden;
+}
+.table .ribbon::before,
+.table .ribbon::after{
+  position: absolute;
+  content: "";
+  z-index: -1;
+  display: block;
+  border: 7px solid #4606ac;
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+.table .ribbon::before{
+  top: 0px;
+  right: 15px;
+}
+.table .ribbon::after{
+  bottom: 15px;
+  left: 0px;
+}
+.table .ribbon span{
+  position: absolute;
+  top: 30px;
+  right: 0;
+  transform: rotate(-45deg);
+  width: 200px;
+  background: #a26bfa;
+  padding: 10px 0;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.12);
+}
+
+.textcontent-pricing {
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+ 
+ }
+
+/* Mobile responsiveness for pricing table */
+@media screen and (min-width: 300px) and (max-width: 520px) {.wrapper{
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}}
+
+/* CSS Code for About US Section */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+.content1{
+  position: relative;
+  margin: 130px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+.about-section .content1 .text{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #202020;
+}
+.about-section .content1 .p{
+  font-size: 2.1875rem;
+  font-weight: 600;
+  color: #202020;
+}
+footer{
+  bottom: 0px;
+  width: 100%;
+  background: #111;
+
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #d9d9d9;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+  color: #d9d9d9;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #f12020;
+  top: -10px;
+  color: #d9d9d9;
+}
+.left .content p{
+  text-align: justify;
+  color: #d9d9d9;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+  color: #d9d9d9;
+}
+.left .content .social a{
+  padding: 0 2px;
+  color: #d9d9d9;
+}
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: #d9d9d9;
+}
+.left .content .social a span:hover{
+  background: #f12020;
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+  color: #d9d9d9;
+}
+.center .content .fas:hover{
+  background: #f12020;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+  color: #d9d9d9;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.about-section .right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+.right form input:focus,
+.right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f12020;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: #e95353;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.about-section .bottom center span{
+  color: #656565;
+}
+.bottom center a{
+  color: #f12020;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 520px) {footer{
+  bottom: 0px;
+  width: 100%;
+  background: #111;
+  margin-left: 0px !important;
+}}
+
+/* CSS Code for FAQs Section */
+
+
+.faq-section {
+  width: 800px;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.question {
+  padding: 15px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  transition: background 0.5s, color 0.5s; /* Add transition for smooth effect */
+}
+
+.question:hover {
+  background: #f12020;
+  color: #fff; /* Change the font color to white */
+}
+
+.answer {
+  padding: 15px;
+  display: none;
+}
+
+.faq-item.active .answer {
+  display: block;
+}
+
+.faq-item .answer p {
+  color: white;
+}
+
+.textcontent-faq h1{
+  color: white;
+  text-align: center;
+  margin-bottom: 8px;
 }

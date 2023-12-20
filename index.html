@@ -6,9 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duyag's Construction Group</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/swiper.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"rel="stylesheet"/>
     <!-- Google Fonts Links For Icon -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
   </head>
   <body>
     <header>
@@ -18,7 +27,7 @@
           <span id="close-menu-btn" class="material-symbols-outlined">close</span>
           <li><a href="#">Home</a></li>
           <li><a href="products.html">Products</a></li>
-          <li><a href="#">Testimonials</a></li>
+          <li><a href="#testimonial">Testimonials</a></li>
           <li><a href="#">About us</a></li>
           <li><a href="https://web.facebook.com/messages/t/100004197998191/">Contact us</a></li>
         </ul>
@@ -71,14 +80,14 @@
     <div class="product-card">
       <img src="./assets/Repair.jpg" alt="Product 2">
       <h3>Renovate and Repair</h3>
-      <p>Upgrade your house using our "Renovate and Repair" plan.</p>
+      <p>Upgrade your house using our "Renovate & Repair" plan.</p>
       <a href="./housing.html"><button>View Details</button></a>
     </div>
 
     <div class="product-card">
       <img src="./assets/Consultation.jpg" alt="Product 2">
       <h3>Consultation</h3>
-      <p>Free consultation for your desired project.</p>
+      <p>Free consultation for your desired dream project.</p>
       <a href="./housing.html"><button>View Details</button></a>
     </div>
     <!-- Add more product cards as needed -->
@@ -93,8 +102,300 @@
       // Close mobile menu on close button click
       closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
     </script>
+    <!-- Testimonial Section -->
 
+    <section id="testimonial" class="testimonial-section">
+      
+      <div class="testimonial mySwiper">
+        <div class="textcontent-testimonials">
+          <h1>Testimonials</h1>
+          <p> These testimonials are a testament to our commitment to excellence and the positive impact we've made on the lives and projects of our valued clients.</p>
+        </div>
+        
+        <div class="testi-content swiper-wrapper">
+          <div class="slide swiper-slide">
+            <img src="./images/Veejay.png" alt="" class="image" />
+            <p>
+             <em> Duyag Group bridges the gap between dreams and reality. Initially aiming to construct a simple dream house, they exceeded expectations by enhancing both its structure and design.</em>  </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Veejay Guibone</span>
+              <span class="job">Full-Stack Software and Web Developer</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="images/img2.jpg" alt="" class="image" />
+            <p>
+              <em>I've spent so many years on saving for my dream house. Duyag Group never fails me to achieve what I was expecting! For my next business expansion, I'll surely work with them.</em>
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Marnie Lotter</span>
+              <span class="job">Client</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="images/img3.jpg" alt="" class="image" />
+            <p>
+             <em> Due to business demands, I need an expansion for my store. Duyag Group helped me with this project and inovated enhanced designs. They also added functional structures on my office which I didn't expect can be feasible!</em>
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">John Smith</span>
+              <span class="job">Business Owner</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="pricing-section">
+      <div class="textcontent-pricing">
+      <h1>Pricing Table Comparison</h1>
+      <p>Whether you're looking for essential services or premium offerings, our pricing table makes it easy to make an informed decision. <br> Compare at a glance and choose the plan that aligns with your requirements, ensuring you get the most value for your investment.</p>
+      </div>
+<div class="wrapper">
+    <div class="table basic">
+      <div class="price-section">
+        <div class="price-area">
+          <div class="inner-area">
+            <span class="text">₱</span>
+            <span class="price">600/day</span>
+          </div>
+        </div>
+      </div>
+      <div class="package-name"></div>
+      <ul class="features">
+        <li>
+          <span class="list-name">Free project consultation</span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">1 helper who will assist</span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Fully furnished</span>
+          <span class="icon cross"><i class="fas fa-times"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Free repair and renovate</span>
+          <span class="icon cross"><i class="fas fa-times"></i></span>
+        </li>
+      </ul>
+      <div class="btn"><button>Purchase</button></div>
+    </div>
+    <div class="table premium">
+      <div class="ribbon"><span>Recommend</span></div>
+      <div class="price-section">
+        <div class="price-area">
+          <div class="inner-area">
+            <span class="text">₱</span>
+            <span class="price">15,000</span>
+          </div>
+        </div>
+      </div>
+      <div class="package-name"></div>
+      <ul class="features">
+        <li>
+          <span class="list-name">Free project consultation</span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">3 helpers who will assist</span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Fully furnished</span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Free repair and renovate</span>
+          <span class="icon cross"><i class="fas fa-times"></i></span>
+        </li>
+      </ul>
+      <div class="btn"><button>Purchase</button></div>
+    </div>
+    <div class="table ultimate">
+      <div class="price-section">
+        <div class="price-area">
+          <div class="inner-area">
+            <span class="text">₱</span>
+            <span class="price">20,000</span>
+          </div>
+        </div>
+      </div>
+      <div class="package-name"></div>
+      <ul class="features">
+        <li>
+          <span class="list-name">Free project consultation</span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">4 helpers who will assist</span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Fully furnished</span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Free repair and renovate</span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+      </ul>
+      <div class="btn"><button>Purchase</button></div>
+    </div>
+  </div>
+    </section>
+    <section class="faq-section">
+      <div class="textcontent-faq">
+        <h1>Frequently Asked Questions</h1>
+      </div>
+
+      <div class="faq-item">
+        <div class="question">
+          <h3>Q: What services do you offer?</h3>
+        </div>
+        <div class="answer">
+          <p>A: We offer a range of services including house construction, native house building, renovation, and free project consultation. Explore our products section for more details.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="question">
+          <h3>Q: How can I contact you for a project?</h3>
+        </div>
+        <div class="answer">
+          <p>A: You can contact us through the "Contact us" page or by clicking the Messenger button on the lower-right corner of the page. We're here to assist you!</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="question">
+          <h3>Q: Do you offer consultation?</h3>
+        </div>
+        <div class="answer">
+          <p>A: Yes! We offer free consultation for all of our plan. This is to ensure that all of your clients will get a clear expectation on what will be the project's outcome.  </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="question">
+          <h3>Q: Do you offer "Adlawan" terms?</h3>
+        </div>
+        <div class="answer">
+          <p>A: Absolutely! Our "Basic Plan" supports daily rate or "Adlawan" terms for as low as ₱600/day. Check out our pricing table for more options. </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="question">
+          <h3>Q: How much is the lowest cost to build a house?</h3>
+        </div>
+        <div class="answer">
+          <p>A: It actually depends on the materials and the type of service you want to avail. The lowest cost we offer for house construction is averaging ₱80,000 - ₱100,000 for half-amacan and half-concrete house. Please check our products section for more details.</p>
+        </div>
+      </div>
+
+      <!-- Add more FAQ items as needed -->
+
+    </section>
+
+    <!-- ... (your existing body content) ... -->
+
+    <!-- JavaScript for FAQ Toggle -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const faqItems = document.querySelectorAll(".faq-item");
+
+        faqItems.forEach((item) => {
+          const question = item.querySelector(".question");
+
+          question.addEventListener("click", () => {
+            item.classList.toggle("active");
+          });
+        });
+      });
+    </script>
     
+
+  <section class="about-section">
     
+    <footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>About us</h2>
+          <div class="content">
+            <p>Duyag Group, spearheaded by Michael Duyag, is a renowned construction company synonymous with excellence in crafting high-quality residential projects, specializing in affordable house construction. With a commitment to precision and affordability, Duyag Group stands as a reliable choice for turning dreams of a perfect home into a reality.</p>
+            <div class="social">
+              <a href="https://www.facebook.com/michael.duyag.754?mibextid=ZbWKwL"><span class="fab fa-facebook-f"></span></a>
+              <a href="https://www.facebook.com/michael.duyag.754?mibextid=ZbWKwL"><span class="fab fa-twitter"></span></a>
+              <a href="https://www.facebook.com/michael.duyag.754?mibextid=ZbWKwL"><span class="fab fa-instagram"></span></a>
+              <a href="https://www.facebook.com/michael.duyag.754?mibextid=ZbWKwL"><span class="fab fa-youtube"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="center box">
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Iga Uy Village, Brgy. Madaum</span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">+639924405423</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">abc@example.com</span>
+            </div>
+          </div>
+        </div>
+        <div class="right box">
+          <h2>Contact us</h2>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <div class="text">Email *</div>
+                <input type="email" required>
+              </div>
+              <div class="msg">
+                <div class="text">Message *</div>
+                <textarea rows="2" cols="25" required></textarea>
+              </div>
+              <div class="btn">
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <center>
+          <span class="credit">Created By <a href="https://veejay15.github.io/Veejayportfolio/">VEEJAY</a> | </span>
+          <span class="far fa-copyright"></span><span> 2023 All rights reserved.</span>
+        </center>
+      </div>
+    </footer>
+  </section>
+    
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
   </body>
 </html>
