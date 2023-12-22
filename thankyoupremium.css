@@ -4,7 +4,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 10px;
-    background-color: #f2f7f8;
+    background-color: #dfe2e2f3;
 }
 
 .thank-you-container {
@@ -13,7 +13,7 @@ body {
     background-color: #fff;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.473);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.336);
 }
 
 h1 {
@@ -46,7 +46,7 @@ table, th, td {
 }
 
 th, td {
-    padding: 12px;
+    padding: 8px auto;
     text-align: center;
 }
 
@@ -115,18 +115,18 @@ button:hover{
 }
 /* Mobile responsiveness for button */
 @media screen and (min-width: 300px) and (max-width: 520px) {button{
-    margin: 0 120px;
+  margin: 0 50px;
 }}
 
 .homebutton {
-    padding: 12px 0px;
-    border: none;
-    font-size: 1rem;
-    color: #fff;
-    border-radius: 6px;
-    margin-top: 38px;
-    margin-left: 0px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: 0.2s ease;
-  }
+  padding: 12px 0px;
+  border: none;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 6px;
+  margin-top: 38px;
+  margin-left: 0px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
