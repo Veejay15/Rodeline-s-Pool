@@ -206,6 +206,20 @@ header.scrolled .navbar .menu-links {
   align-items: center;
 }
 
+.card-section{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin-bottom: 0px auto;
+  background-image: url('assets/Pool\ main.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+
 .product-card {
   background-color: #fff;
   padding: 20px;
@@ -315,7 +329,7 @@ header.scrolled .navbar .menu-links {
 }
 .table .price-area{
   height: 130px;
-  width: 130px;
+  width: 180px;
   border-radius: 50%;
   padding: 2px;
 }
@@ -787,3 +801,101 @@ footer{
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
     }
+
+    .video-section {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 40px 0;
+  }
+  .video-section h3 {
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  
+  }
+  .video-card {
+      width: 45%;
+      margin-bottom: 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-card video {
+      width: 45%;
+      height: auto;
+      max-height: 300px;
+      border-bottom: 1px solid #ddd;
+  }
+  
+  .video-card h3 {
+      padding: 10px;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #333;
+  }
+  
+  .video-card p {
+      padding: 10px;
+      font-size: 1rem;
+      color: #555;
+  }
+  .video-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.video-section h2 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+
+.video-card {
+    width: 45%;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.video-card video {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.video-card h3 {
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.video-card p {
+    padding: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .video-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-card {
+        width: 90%;
+        max-width: 400px;
+    }
+}
