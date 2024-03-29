@@ -33,7 +33,7 @@ header .navbar {
 }
 
 .navbar .logo span {
-  color: #C06B3E;
+  color: #f12020;
 }
 
 .navbar .menu-links {
@@ -54,7 +54,7 @@ header .navbar {
 
 .hero-section {
   height: 100vh;
-  background-image: url('assets/Construction\ 2.jpg');
+  background-image: url('assets/Pool\ main.jpg');
   background-position: center;
   background-size: cover;
   display: flex;
@@ -73,18 +73,21 @@ header .navbar {
 
 .hero-section .content h2 {
   font-size: 3rem;
-  max-width: 600px;
+  max-width: 800px;
   line-height: 70px;
 }
 
 .hero-section .content p {
   font-weight: 350;
-  max-width: 600px;
+  color: #ffffff;
+  max-width: 800px;
   margin-top: 15px;
+  font-size: 20px;
 }
 
 .hero-section .content button {
-  background:#f12020;
+  background-color: #da5b12ee; /* Start with the base color */
+  background-image: linear-gradient(45deg, #eb2a2a, #e91d1d); /* Adjust the gradient colors */
   padding: 12px 30px;
   border: none;
   font-size: 1rem;
@@ -98,7 +101,7 @@ header .navbar {
 
 .hero-section .content button:hover {
   color: #fff;
-  background: #ec5b5b;
+  background: #f54141;
 }
 
 #close-menu-btn {
